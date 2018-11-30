@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: auto 50px;
+  background-color: whitesmoke;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 20px;
+  min-height: 100vh;
+}
+
+header, footer, section {
+  grid-column: 1/5;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header ul li {
+  text-align: center;
+}
+
+header ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  transition: 0.5s;
+  background: rgba(55, 55, 55, 0.5);
+  color: lightgreen;
+  margin: 5px auto;
+}
+
+header ul li a:hover {
+  color: green;
+  background: rgba(155, 155, 155, 0.5);
+}

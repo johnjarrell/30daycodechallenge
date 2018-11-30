@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: black;
+  box-sizing: border-box;
+}
+.container {
+  margin: auto;
+  background: rgba(100, 100, 100, 0.6);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header, section, footer {
+  grid-column: 1/5;
+  padding: 20px;
+  background: rgba(155, 155, 155, 0.6);
+}
+header ul {
+  list-style-type: none;
+}
+header ul li {
+  margin: 5px auto;
+}
+header ul li a {
+  display: block;
+  padding: 0.8rem;
+  font-size: 1.1em;
+  text-align: center;
+  background: rgba(155, 155, 155, 0.6);
+}
+header h1 {
+  padding: 20px;
+  text-align: center;
+  background: rgba(155, 155, 155, 0.6);
+}
+@media screen and (min-width: 693px) {
+  .container {
+    margin: auto 50px;
+  }
+}
